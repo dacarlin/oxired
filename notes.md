@@ -34,8 +34,32 @@ NAX and oxirane, and between the histidine and oxirane at this time.
 ## Enzyme design 
 
 Mutants were uploaded to Epiphany and ran through Rosetta enzyme design. 
-A total of 615 mutants were processed, with XXX having all_cst scores of 
+A total of 615 mutants were processed, with 31 having all_cst scores of 
 less than 10 after Monte Carlo optimization of constraints and design of
 the protein-ligand interface (favoring native resiudes by 2.2 energy units). 
+(It's a coincidence that the number of mutants that gave output on this
+run is the same as the number of scaffolds.) 
+
+## Analysis of output 
+
+Of 31 scaffolds, these gave output on this run:
+
+1kol
+1lj8
+1nnu
+1o2d
+1oaa
+2ag8
+2d2i
+2f1k
+2v6g
+3jyo
+3orf
+4bms
+4bmv
+
+
+
+
 
 

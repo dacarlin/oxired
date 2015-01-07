@@ -1,0 +1,24 @@
+<ROSETTASCRIPTS>
+<SCOREFXNS>
+  <myscore weights=talaris2013_cst.wts/>
+</SCOREFXNS>
+<TASKOPERATIONS>
+</TASKOPERATIONS>
+<FILTERS>
+</FILTERS>
+<MOVERS>
+  <StartFrom name=start chain=Y>
+    <Coordinates x=%%x%% y=%%y%% z=%%z%% />
+  </StartFrom>
+
+  <PredesignPerturbMover name=predock 
+    trans_magnitude=0.1 rot_magnitude=30 dock_trials=999 />
+</MOVERS>
+<APPLY_TO_POSE>
+</APPLY_TO_POSE>
+<PROTOCOLS>
+  <add mover=start/>
+  <add mover=predock/>
+</PROTOCOLS>
+<OUTPUT />
+</ROSETTASCRIPTS>

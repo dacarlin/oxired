@@ -4,17 +4,16 @@
 #$ -S /bin/bash
 #$ -e logs
 #$ -o logs
-#$ -N design
-#$ -t 1-615 
-
-str=$( awk -v s="${SGE_TASK_ID}" 'NR==s' run.txt )
 
 export ROSETTA_DB3=/share/archive2/siegellab/Rosetta/main/database
 export PATH=$PATH:/share/archive2/siegellab/Rosetta/main/source/bin
 
-for ff in $( ls *flags ); do #flag file
-  mkdir $ff-out
-  rosetta_scripts.linuxgccrelease @ $ff \
-    -in:file:s $str -out:path:all $ff-out \
-    -extra_res_fa ${str:0:4}.params 
-done
+CST=$( awk 'NR=="'${SGE_TASK_ID}'" { print $2 }' combos.txt ) 
+STRUCTURE=$( awk 'NR=="'${SGE_TASK_ID}'" { print $1 }' combos.txt )
+
+rosetta_scripts.linuxgccrelease @ design.flags \
+  -in:file:s $STRUCTURE \
+  -extra_res_fa in/${STRUCTURE:0:4}.params \
+  -out:path:all out \
+  -enzdes::cstfile $CST \
+  -out:user_tag $CST

@@ -52,7 +52,7 @@
   score_type=cstE 
   scorefxn=myscore 
   whole_pose=1 
-  energy_cutoff=10
+  energy_cutoff=100
 />
 
 </FILTERS>
@@ -117,7 +117,7 @@
 <GenericMonteCarlo name=iterative_dd 
   mover_name=dock_des 
   filter_name=allcst 
-  trials=4
+  trials=3
   sample_type=low 
   temperature=0.6 
   drift=1

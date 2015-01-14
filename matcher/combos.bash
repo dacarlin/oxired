@@ -7,7 +7,7 @@ fi
 
 combine() {
   for str in $( ls in/*h.pdb ); do
-    for f in $( ls *cst ); do 
+    for f in $( ls cst/*cst ); do 
       echo $str $f 
     done
   done 

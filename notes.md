@@ -42,24 +42,3 @@ run is the same as the number of scaffolds.)
 
 ## Analysis of output 
 
-Of 31 scaffolds, these gave output on this run:
-
-1kol
-1lj8
-1nnu
-1o2d
-1oaa
-2ag8
-2d2i
-2f1k
-2v6g
-3jyo
-3orf
-4bms
-4bmv
-
-
-
-
-
-

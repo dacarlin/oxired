@@ -42,3 +42,8 @@ run is the same as the number of scaffolds.)
 
 ## Analysis of output 
 
+# New scaffolds to order 
+
+1mg5
+1kqc
+

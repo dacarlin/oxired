@@ -1,3 +1,5 @@
+# for generating Lua scripts to automate looking at Rosetta designs in Foldit
+
 from core.db.amino_acid import THREE_to_one
 from sys import argv 
 

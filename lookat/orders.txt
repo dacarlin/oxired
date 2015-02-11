@@ -1,0 +1,9 @@
+cys108ser+tyr135his
+cys108his
+cys108his+lys282arg
+tyr135his
+phe210trp
+cys108ser+phe210trp
+asn176asp+phe210trp
+val65asp+cys108thr+phe210trp+cys250asn
+cys108thr+phe210trp+cys250asn

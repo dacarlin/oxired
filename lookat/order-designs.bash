@@ -12,5 +12,5 @@ for des in *des*pdb; do
   python3 ~/Documents/mo/makeoligo.py chopped.fasta this_mutant.txt
 
   # clean up 
-  #rm this_mutant.txt chopped.fasta
+  rm this_mutant.txt chopped.fasta
 done

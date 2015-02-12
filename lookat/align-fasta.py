@@ -32,17 +32,16 @@ for frame in [ codons1, codons2, codons3 ]:
   tra = ''.join( [ aa_from_codon( i ) for i in frame if len(i) == 3 ] )
   #print( "Translation of nucleotide sequence: %s" % tra )
   #print( "Protein sequence from PDB: %s" % pro )
-  result = re.search( pro[0:10], tra )  
+  result = re.search( pro[0:8], tra )  
   if result:
-    chopped = nuc[ (result.start()*3 )+2:] 
-    print( "Found a match starting at %d in the nuc. sequence" % result.start() )
-    print( "Chopped nucleotide sequence: %s" % chopped ) 
+    chopped = nuc[ (result.start()*3)+2: ] 
+    #print( "Found a match starting at %d in the nuc. sequence" % result.start() )
+    #print( "Chopped nucleotide sequence: %s" % chopped ) 
 
-    #translate the chopped nucleotide sequence 
     tra2 = [ aa_from_codon( chopped[i:i+3] ) for i in range(0, len(chopped), 3) 
       if len( chopped[i:i+3] ) == 3 ] 
 
-    print( "Translation of chopped nuc. seq.: %s" % ''.join(tra2) )
-
+    #print( "Translation of chopped nuc. seq.: %s" % ''.join(tra2) )
     with open("chopped.fasta", 'w') as out:
       print( chopped, file=out )
+

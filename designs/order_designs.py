@@ -52,9 +52,8 @@ for design in designs:
 
   orders.append( { 'scaffold': scaffold, 'mutations': mutations, 'nucleotide': chopped } )
 
-for order in orders:
-  gene = order[ 'nucleotide' ] 
-  line = order[ 'mutations' ]
+  gene = chopped
+  line = mutations
 
   seq = [ gene[i:i+3] for i in range(0, len(gene), 3) ] 
   l = []
@@ -73,5 +72,5 @@ for order in orders:
     list_of_oligos = e.split(r',')                                                               
                                                                                                  
   mutant_handle = '+'.join(switches)                                                             
-  j = { 'handle': mutant_handle, 'oligos': list_of_oligos, 'ssDNA': order[ 'scaffold' ] }       
+  j = { 'handle': mutant_handle, 'oligos': list_of_oligos, 'ssDNA': scaffold }       
   print ( j )   

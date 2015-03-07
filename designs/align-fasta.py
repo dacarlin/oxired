@@ -12,6 +12,7 @@ args = parser.parse_args()
 with open(args.nucleotide) as fn:
   fn = [ line.strip() for line in fn ] 
   nuc = ''.join( fn )
+  scaffold = str( args.nucleotide )[0:4] 
 
 with open(args.protein) as protein:
   protein = [ l.strip() for l in protein if not l.startswith(r'>')]
@@ -41,7 +42,5 @@ for frame in [ codons1, codons2, codons3 ]:
     tra2 = [ aa_from_codon( chopped[i:i+3] ) for i in range(0, len(chopped), 3) 
       if len( chopped[i:i+3] ) == 3 ] 
 
-    #print( "Translation of chopped nuc. seq.: %s" % ''.join(tra2) )
-    with open("chopped.fasta", 'w') as out:
-      print( chopped, file=out )
+    print( chopped ) 
 

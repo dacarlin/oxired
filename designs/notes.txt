@@ -1,3 +1,0 @@
-( grep ^ATOM wt.pdb && grep ^HETA design.pdb )> frank.pdb
-python3 parent.py design.pdb | pbcopy 
-

@@ -1,4 +1,5 @@
 import glob 
+import json
 import argparse
 import re
 from core.db.amino_acid import THREE_to_one, cod, aa_from_codon, rc 
@@ -6,12 +7,12 @@ from core.db.amino_acid import THREE_to_one, cod, aa_from_codon, rc
 parser = argparse.ArgumentParser()
 args = parser.parse_args()
 
-designs = glob.glob('*des*pdb') 
+orders = [] # final output will be a list of dicts 
 
-orders = [] 
+designs = glob.glob('*des*pdb') # or feed in list, up to you
 
 for design in designs:
-  scaffold = design[0:4]
+  scaffold = design[0:4] 
 
   # diff the design and wt PDB 
   with open( design ) as design, open( '%s.pdb' % scaffold ) as wt:
@@ -50,21 +51,21 @@ for design in designs:
     if result:
       chopped = nuc[ (result.start()*3)+2: ] 
 
-  orders.append( { 'scaffold': scaffold, 'mutations': mutations, 'nucleotide': chopped } )
-
-  gene = chopped
-  line = mutations
-
-  seq = [ gene[i:i+3] for i in range(0, len(gene), 3) ] 
+  seq = [ chopped[i:i+3] for i in range(0, len(chopped), 3) ] 
   l = []
-  switches = re.split(r'\+', line)
+  ditch = False 
+  switches = re.split(r'\+', mutations)
   for switch in switches:
     old, *i, new = switch
     i = int(''.join(i))
     ori = aa_from_codon( seq[i-1] )
-    assert old is ori, 'error: you say ' + old + ' but seq has ' + ori 
-    seq[i-1] = cod[new].upper()
-    l += [i] 
+    if old is ori:
+      seq[i-1] = cod[new].upper()
+      l += [i] 
+    else:
+      print( 'Error while validating mutant %s %s at position %d:' % ( scaffold, mutations, i ) )  
+      print( 'The nucleotide sequence codes for %s here \n' % ( ori, ) )
+      ditch = True 
 
   if l:
     e = rc(''.join(seq[min(l)-6:max(l)+4]))                                                      
@@ -73,4 +74,5 @@ for design in designs:
                                                                                                  
   mutant_handle = '+'.join(switches)                                                             
   j = { 'handle': mutant_handle, 'oligos': list_of_oligos, 'ssDNA': scaffold }       
-  print ( j )   
+  if not ditch:
+    print( json.dumps( j , indent=2, sort_keys=True ) )   

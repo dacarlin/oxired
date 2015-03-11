@@ -9,25 +9,28 @@ args = parser.parse_args()
 
 orders = [] # final output will be a list of dicts 
 
-designs = glob.glob('*des*pdb') # or feed in list, up to you
+designs = glob.glob('1l*des*pdb') # or feed in list, up to you
 
 for design in designs:
   scaffold = design[0:4] 
 
   # diff the design and wt PDB 
-  with open( design ) as design, open( '%s.pdb' % scaffold ) as wt:
+  with open( design ) as design, open( '../scaffolds/%s.pdb' % scaffold ) as wt:
 
     a = {}
     for line in wt:
-      if re.search( r'^ATOM.* CA', line ): 
-        a[ line.split()[5] ] =line.split()[3]  
+      spline = line.strip().split() 
+      if spline[0] == 'ATOM' and spline[2] == 'CA': # re.search( r'^ATOM.* CA', line ): 
+        print( line ) 
+        a[ spline[5] ] = spline[3]  
       
     l = [] 
     for line in design:
-      if re.search( r'^ATOM.* CA', line ):
-        if a[ line.split()[5] ] != line.split()[3] :
-          ll = '%s%s%s' % ( THREE_to_one( a[ line.split()[5] ] ), \
-            line.split()[5], THREE_to_one( line.split()[3] ) ) 
+      spline = line.strip().split() 
+      if spline[0] == 'ATOM' and spline[2] == 'CA': # re.search( r'^ATOM.* CA', line ):
+        if a[ spline[5] ] != spline[3] :
+          ll = '%s%s%s' % ( THREE_to_one( a[ spline[5] ] ), \
+            spline[5], THREE_to_one( spline[3] ) ) 
           l.append( ll )  
 
     mutations = '+'.join( l ) 

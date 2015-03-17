@@ -5,35 +5,32 @@ import re
 from core.db.amino_acid import THREE_to_one, cod, aa_from_codon, rc 
 
 parser = argparse.ArgumentParser()
+parser.add_argument( '--only', help='provide a scaffold name whose designs should be considered')
 args = parser.parse_args()
 
 orders = [] # final output will be a list of dicts 
 
-designs = glob.glob('1l*des*pdb') # or feed in list, up to you
+if args.only:
+  designs = glob.glob('%s*des*pdb' % args.only ) # or feed in list, up to you
+else:
+  designs = glob.glob('*des*pdb')
 
 for design in designs:
   scaffold = design[0:4] 
 
   # diff the design and wt PDB 
-  with open( design ) as design, open( '../scaffolds/%s.pdb' % scaffold ) as wt:
-
-    a = {}
-    for line in wt:
-      spline = line.strip().split() 
-      if spline[0] == 'ATOM' and spline[2] == 'CA': # re.search( r'^ATOM.* CA', line ): 
-        print( line ) 
-        a[ spline[5] ] = spline[3]  
-      
+  with open( design ) as design, open( '../scaffolds/%s_0001.pdb' % scaffold ) as wt: #renumbered scaffolds
+    wt_table = { l.split()[5]: l.split()[3] for l in wt if l.startswith('ATOM') } 
+    des_table = { l.split()[5]: l.split()[3] for l in design if l.startswith('ATOM') } 
     l = [] 
-    for line in design:
-      spline = line.strip().split() 
-      if spline[0] == 'ATOM' and spline[2] == 'CA': # re.search( r'^ATOM.* CA', line ):
-        if a[ spline[5] ] != spline[3] :
-          ll = '%s%s%s' % ( THREE_to_one( a[ spline[5] ] ), \
-            spline[5], THREE_to_one( spline[3] ) ) 
-          l.append( ll )  
 
-    mutations = '+'.join( l ) 
+  for key, value in des_table.items():
+    if wt_table[ key ] == value:
+      pass
+    else:
+      l += [ '%s%s%s' % ( THREE_to_one( wt_table[ key ] ) , key, THREE_to_one( value ) ) ]
+
+  mutations = '+'.join( l ) 
 
   # get sequences and align them 
   with open( '../seq/nucleotide/%s.fasta' % scaffold ) as fn:
@@ -67,7 +64,7 @@ for design in designs:
       l += [i] 
     else:
       print( 'Error while validating mutant %s %s at position %d:' % ( scaffold, mutations, i ) )  
-      print( 'The nucleotide sequence codes for %s here \n' % ( ori, ) )
+      print( 'The nucleotide sequence codes for %s%s%s here \n' % ( aa_from_codon( seq[i-2] ), ori, aa_from_codon( seq[i] )) )
       ditch = True 
 
   if l:

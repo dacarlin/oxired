@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/1snyA.pdb
+File 1sny.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/1SNY.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/FUMLJILC.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/FUMLJILC.pdb.gz 1sny.pdb A   248 ALT --- --- --- OK
+>1snyA
+HMNSILITGCNRGLGLGLVKALLNLPQPPQHLFTTCRNREQAKELEDLAKNHSNIHILEIDLRNFDAYDKLVADIEGVTKDQGLNVLFNNAGIAPKSARITAVRSQELLDTLQTNTVVPIMLAKACLPLLKKAAKANESQPMGVGRAAIINMSSILGSIQGNTDGGMYAYRTSKSALNAATKSLSVDLYPQRIMCVSLHPGWVKTDMGGSSAPLDVPTSTGQIVQTISKLGEKQNGGFVNYDGTPLAW

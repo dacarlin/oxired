@@ -1,19 +1,21 @@
-#!/bin/bash
+if [[ $# < 1 ]]; then
+  echo No name supplied for this job, using default
+  NAME=name
+else
+  NAME=$1
+fi 
 
-#$ -cwd 
-#$ -S /bin/bash
-#$ -e logs
-#$ -o logs
+combine() {
+  for str in $( ls in/*pdb ); do
+    for f in $( ls cst/*cst ); do 
+      echo $str $f 
+    done
+  done 
+}
 
-export ROSETTA_DB3=/share/archive2/siegellab/Rosetta/main/database
-export PATH=$PATH:/share/archive2/siegellab/Rosetta/main/source/bin
+combine > combos.txt 
 
-CST=$( awk 'NR=="'${SGE_TASK_ID}'" { print $2 }' combos.txt ) 
-STRUCTURE=$( awk 'NR=="'${SGE_TASK_ID}'" { print $1 }' combos.txt )
-
-rosetta_scripts.linuxgccrelease @ design.flags \
-  -in:file:s $STRUCTURE \
-  -extra_res_fa ${STRUCTURE:0:7}.params \
-  -out:path:all out \
-  -enzdes::cstfile $CST \
-  -out:user_tag $CST
+NUMBER=$( wc -l combos.txt | cut -d' ' -f1 ) 
+echo Generated $NUMBER combos. Submitting with
+echo qsub -t 1-$NUMBER -tc 250 -N $NAME run.bash 
+qsub -t 1-$NUMBER -tc 250 -N $NAME run.bash 

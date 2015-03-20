@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/2aznA.pdb
+File 2azn.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/2AZN.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/A8HGZR87.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/A8HGZR87.pdb.gz 2azn.pdb A   219 --- --- --- --- OK
+>2aznA
+EKKPYIISNVGMTLDGKLATINNDSRISCEEDLIRVHKIRANVDGIMVGIGTVLKDDPRLTVHKIKSDRNPVRIVVDSKLRVPLNARVLNKDAKTIIATTEDTNEEKEKKIKILEDMGVEVVKCGRGKVDLKKLMDILYDKGIKSILLEGGGTLNWGMFKEGLVDEVSVYIAPKIFGGKEAPTYVDGEGFKTVDECVKLELKNFYRLGEGIVLEFKVKK

@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/3orfA.pdb
+File 3orf.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/3ORF.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/7JJ5NXPN.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/7JJ5NXPN.pdb.gz 3orf.pdb A   230 --- --- --- --- OK
+>3orfA
+SKNILVLGGSGALGAEVVKFFKSKSWNTISIDFRENPNADHSFTIKDSGEEEIKSVIEKINSKSIKVDTFVCAAGGWSGGNASSDEFLKSVKGMIDMNLYSAFASAHIGAKLLNQGGLFVLTGASAALNRTSGMIAYGATKAATHHIIKDLASENGGLPAGSTSLGILPVTLDTPTNRKYMSDANFDDWTPLSEVAEKLFEWSTNSDSRPTNGSLVKFETKSKVTTWTNL

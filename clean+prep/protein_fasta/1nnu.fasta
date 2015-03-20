@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/1nnuA.pdb
+File 1nnu.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/1NNU.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/MZ2BQK4O.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/MZ2BQK4O.pdb.gz 1nnu.pdb A   229 --- --- --- --- OK
+>1nnuA
+EDICFIAGIGDTNGYGWGIAKELSKRNVKIIFGIWPPVYNIFMKNYKNGKFDNDMIIDKDKKMNILDMLPFDASFDTANDIDEETKNNKRYNMLQNYTIEDVANLIHQKYGKINMLVHSLANAKEVQKDLLNTSRKGYLDALSKSSYSLISLCKYFVNIMKPQSSIISLTYHASQKVVPGYGGGMSSAKAALESDTRVLAYHLGRNYNIRINTISAGPLKSRAATAINK

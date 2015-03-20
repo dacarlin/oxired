@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/4bmvA.pdb
+File 4bmv.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/4BMV.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/EAZU0TC9.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/EAZU0TC9.pdb.gz 4bmv.pdb A   256 --- --- --- --- OK
+>4bmvA
+TLPTVLITGASSGIGATYAERFARRGHDLVLVARDKVRLDALAARLRDESGVAVEALQADLTRPADLAAVEIRLREDARIGILINNAGMAQSGGFVQQTAEGIERLITLNTTALTRLAAAVAPRFVQSGTGAIVNIGSVVGFAPEFGMSIYGATKAFVLFLSQGLNLELSPSGIYVQAVLPAATRTEIWGRAGIDVNTLPEVMEVDELVDAALVGFDRRELVTIPPLHVAARWDALDGARQGLMSDIRQAQAADRY

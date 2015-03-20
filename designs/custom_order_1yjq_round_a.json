@@ -1,0 +1,93 @@
+{
+  "handle": "t118s+l11a",
+  "oligos": [
+    "tgctgcatgggtGCTtgtacccatcagcag",
+    "cagccacagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "l68m+i96m+h120a+t118a+l11a+v159k+v163i+w15h",
+  "oligos": [
+    "gttatgccatgcAATatccggcagTTTggtctgcaggatatc",
+    "atcacgacgtgctgcCGCggtCGCtgtacccatcagcag",
+    "gcccataccattatgCATcagcagaatcggggt",
+    "tgctttcagggtaacCATcagcagatcgctggt",
+    "acacagtgcggtcagATGcagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "l68n+t118s+l11a+w15h",
+  "oligos": [
+    "tgctgcatgggtGCTtgtacccatcagcag",
+    "tgctttcagggtaacGTTcagcagatcgctggt",
+    "acacagtgcggtcagATGcagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "t118s+l11a+l160h",
+  "oligos": [
+    "tgcaacatccggATGcacggtctgcaggat",
+    "acgtgctgcatgggtGCTtgtacccatcagcag",
+    "cagccacagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "h120a+t137h+t118a+l11a",
+  "oligos": [
+    "cggaccaatatgATGaataccgttggccac",
+    "atcacgacgtgctgcCGCggtCGCtgtacccatcagcag",
+    "cagccacagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "h120g+t137h+t118a+l11a",
+  "oligos": [
+    "cggaccaatatgATGaataccgttggccac",
+    "atcacgacgtgctgcGCCggtCGCtgtacccatcagcag",
+    "cagccacagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "h120a+t137h+t118a+l11a+v163i",
+  "oligos": [
+    "gttatgccatgcAATatccggcagcacggt",
+    "tgccggaccaatatgATGaataccgttggccac",
+    "atcacgacgtgctgcCGCggtCGCtgtacccatcagcag",
+    "cagccacagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "i96h+h120a+t118a+l11a+v163i",
+  "oligos": [
+    "gttatgccatgcAATatccggcagcacggt",
+    "atcacgacgtgctgcCGCggtCGCtgtacccatcagcag",
+    "gcccataccattatgATGcagcagaatcggggt",
+    "cagccacagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "h120a+t118a+l11a+v163i+w15h",
+  "oligos": [
+    "gttatgccatgcAATatccggcagcacggt",
+    "atcacgacgtgctgcCGCggtCGCtgtacccatcagcag",
+    "acacagtgcggtcagATGcagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}
+{
+  "handle": "h120a+t118a+l11a+v159k+v163i+w15h",
+  "oligos": [
+    "gttatgccatgcAATatccggcagTTTggtctgcaggatatc",
+    "atcacgacgtgctgcCGCggtCGCtgtacccatcagcag",
+    "acacagtgcggtcagATGcagctgaccCGCtgcaccacaacccag"
+  ],
+  "ssDNA": "1yjq"
+}

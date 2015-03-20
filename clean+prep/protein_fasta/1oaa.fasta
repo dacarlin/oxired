@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/1oaaA.pdb
+File 1oaa.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/1OAA.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/C1NYKOG5.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/C1NYKOG5.pdb.gz 1oaa.pdb A   259 ALT --- --- --- OK
+>1oaaA
+ADGLGCAVCVLTGASRGFGRALAPQLARLLSPGSVMLVSARSESMLRQLKEELGAQQPDLKVVLAAADLGTEAGVQRLLSAVRELPRPEGLQRLLLINNAATLGDVSKGFLNVNDLAEVNNYWALNLTSMLCLTSGTLNAFQDSPGLSKTVVNISSLCALQPYKGWGLYCAGKAARDMLYQVLAAEEPSVRVLSYAPGPLDNDMQQLARETSKDPELRSKLQKLKSDGALVDCGTSAQKLLGLLQKDTFQSGAHVDFYD

@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/1mg5A.pdb
+File 1mg5.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/1MG5.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/FR6JFS0Y.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/FR6JFS0Y.pdb.gz 1mg5.pdb A   255 --- --- --- --- OK
+>1mg5A
+SFTLTNKNVIFVAGLGGIGLDTSKELLKRDLKNLVILDRIENPAAIAELKAINPKVTVTFYPYDVTVPIAETTKLLKTIFAQLKTVDVLINGAGILDDHQIERTIAVNYTGLVNTTTAILDFWDKRKGGPGGIICNIGSVTGFNAIYQVPVYSGTKAAVVNFTSSLAKLAPITGVTAYTVNPGITRTTLVHKFNSWLDVEPQVAEKLLAHPTQPSLACAENFVKAIELNQNGAIWKLDLGTLEAIQWTKHWDSGI

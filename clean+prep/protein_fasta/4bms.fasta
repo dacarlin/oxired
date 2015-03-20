@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/4bmsA.pdb
+File 4bms.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/4BMS.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/MHWF1FTN.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/MHWF1FTN.pdb.gz 4bms.pdb A   247 --- --- --- --- OK
+>4bmsA
+MYRLLNKTAVITGGNSGIGLATAKRFVAEGAYVFIVGRRRKELEQAAAEIGRNVTAVKADVTKLEDLDRLYAIVREQRGSIDVLFANSGAIEQKTLEEITPEHYDRTFDVNVRGLIFTVQKALPLLRDGGSVILTSSVAGVLGLQAHDTYSAAKAAVRSLARTWTTELKGRSIRVNAVSPGAIDTPIIENQTQEEADELRAKFAAATPLGRVGRPEELAAAVLFLASDDSSYVAGIELFVDGGLTQV

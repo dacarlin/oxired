@@ -1,0 +1,6 @@
+Looking for:  /work/robetta/src/rosetta_server/fixed_pdbs/2ag8A.pdb
+File 2ag8.pdb doesn't exist, downloading from internet.
+wget --quiet http://www.rcsb.org/pdb/files/2AG8.pdb.gz -O /Users/alex/Desktop/oxi/clean+prep/clean_pdb/KVBLZU0D.pdb.gz
+/Users/alex/Desktop/oxi/clean+prep/clean_pdb/KVBLZU0D.pdb.gz 2ag8.pdb A   263 --- --- --- --- OK
+>2ag8A
+MNVYFLGGGNMAAAVAGGLVKQGGYRIYIANRGAEKRERLEKELGVETSATLPELHSDDVLILAVKPQDMEAACKNIRTNGALVLSVAAGLSVGTLSRYLGGTRRIVRVMPNTPGKIGLGVSGMYAEAEVSETDRRIADRIMKSVGLTVWLDDEEKMHGITGISGSGPAYVFYLLDALQNAAIRQGFDMAEARALSLATFKGAVALAEQTGEDFEKLQKNVTSKGGTTHEAVEAFRRHRVAEAISEGVCACVRRSQEMERQYQ

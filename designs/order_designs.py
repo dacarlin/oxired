@@ -73,6 +73,15 @@ for design in designs:
     list_of_oligos = e.split(r',')                                                               
                                                                                                  
   mutant_handle = '+'.join(switches)                                                             
-  j = { 'handle': mutant_handle, 'oligos': list_of_oligos, 'ssDNA': scaffold }       
   if not ditch:
-    print( json.dumps( j , indent=2, sort_keys=True ) )   
+    orders += [ { 'handle': mutant_handle, 'oligos': list_of_oligos, 'ssDNA': scaffold } ]
+
+
+# print out final order
+print( json.dumps( orders, indent=2 ) ) 
+
+#os = {}
+#for i in orders:
+#  for j in i['oligos']:
+#    os.update( { j: { 'ssDNA': i['ssDNA'], 'handle': i['handle'] } } ) 
+#print( os ) 

@@ -1,0 +1,113 @@
+[
+  {
+    "handle": "k122h+i315q",
+    "oligos": [
+      "accaaaccaccaCTGaccaacatctttcag",
+      "cggacccatataatgATGacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "k122h",
+    "oligos": [
+      "acccatataatgATGacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "k122h+f128y",
+    "oligos": [
+      "gccatagctttcATAcggacccatataatgATGacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "i322h",
+    "oligos": [
+      "ttcattacccagATGcacatcaccaaacca"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "f318a+i322h",
+    "oligos": [
+      "ttcattacccagATGcacatcaccCGCccaccaaataccaac"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "f318a+i322h+c327k",
+    "oligos": [
+      "gctgtccaggaaTTTttcattacccagATGcacatcaccCGCccaccaaataccaac"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "f318a+i322h+k122a+c327k",
+    "oligos": [
+      "gctgtccaggaaTTTttcattacccagATGcacatcaccCGCccaccaaataccaac",
+      "cggacccatataatgCGCacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "k122h",
+    "oligos": [
+      "acccatataatgATGacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "m125w+k122h",
+    "oligos": [
+      "ttcaaacggaccCCAataatgATGacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "f318h+k122a",
+    "oligos": [
+      "aatcacatcaccATGccaccaaataccaac",
+      "cggacccatataatgCGCacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "f318h",
+    "oligos": [
+      "aatcacatcaccATGccaccaaataccaac"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "f318a+k122y",
+    "oligos": [
+      "aatcacatcaccCGCccaccaaataccaac",
+      "cggacccatataatgATAacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "f318a+i322t+m190y",
+    "oligos": [
+      "ttcattacccagGGTcacatcaccCGCccaccaaataccaac",
+      "ggtgccaaccagattATAcatgctatacgggct"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "f318a+i322h+n180p",
+    "oligos": [
+      "ttcattacccagATGcacatcaccCGCccaccaaataccaac",
+      "gctaaaaccaaaaatCGGaccaggacgatgaac"
+    ],
+    "ssDNA": "2v6g"
+  },
+  {
+    "handle": "m125h+k122h",
+    "oligos": [
+      "ttcaaacggaccATGataatgATGacgaccggtctgcag"
+    ],
+    "ssDNA": "2v6g"
+  }
+]
